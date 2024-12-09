@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Kartların birden fazla satıra yayılmasını sağlar */
+    justify-content: space-between;
+    /* Kartlar arasındaki boşluğu eşit dağıtır */
+
+    gap: 10px;
+}
+
+section h2 {
+    text-align: center;
+    /* Başlığı ortalar */
+    margin-bottom: 20px;
+    /* Başlık ile kitap kartları arasında boşluk bırakır */
+    width: 100%;
+    /* Başlığın tam genişlikte olmasını sağlar */
+}
+
+
+.kitap-karti {
+    border: 1px solid #ccc;
+    /* Kenar rengi ve kalınlığı */
+    border-radius: 5px;
+    /* Kenarları yuvarlatma */
+    padding: 15px;
+    /* İçerik ile kenar arasındaki boşluk */
+    margin: 10px;
+    /* Kartlar arasındaki boşluk */
+    width: calc(33.33% - 20px);
+    /* Üç kart yan yana olacak şekilde genişlik ayarı */
+    margin: 10px;
+    /* Kartlar arasındaki boşluk */
+    /* Kart genişliği */
+    text-align: center;
+    /* Metni ortalama */
+    background-color: #f9f9f9;
+    /* Arka plan rengi */
+    transition: transform 0.2s;
+    /* Hover efekti için geçiş */
+}
+
+.kitap-karti:hover {
+    transform: scale(1.05);
+    /* Hover durumunda kartı büyütme efekti */
+}
+
+.kitap-karti h3 {
+    font-size: 1.2em;
+    /* Başlık boyutunu artır */
+}
+
+.kitap-karti p {
+    font-size: 0.9em;
+    /* Paragraf boyutunu ayarla */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* Kartların birden fazla satıra yayılmasını sağlar */
+    justify-content: center;
+    /* Kartları ortalar */
+}
+
+.hakkinda {
+    background-color: #f9f9f9;
+    /* Açık gri arka plan rengi */
+    border: 1px solid #ddd;
+    /* Kenar rengi */
+    border-radius: 8px;
+    /* Kenarları yuvarlama */
+    padding: 20px;
+    /* İçerik için boşluk */
+    margin: 20px 0;
+    /* Üst ve alt boşluk */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    text-align: center;
+    /* Metni ortalama */
+}
+
+.hakkinda h2 {
+    color: #333;
+    /* Başlık rengi */
+    font-family: 'Arial', sans-serif;
+    /* Yazı tipi */
+    font-size: 24px;
+    /* Başlık boyutu */
+    margin-bottom: 10px;
+    /* Başlık altı boşluk */
+}
+
+.hakkinda p {
+    color: #555;
+    /* Paragraf rengi */
+    font-family: 'Georgia', serif;
+    /* Yazı tipi */
+    font-size: 16px;
+    /* Paragraf boyutu */
+    line-height: 1.6;
+    /* Satır yüksekliği */
+}
+
+.yazarlar {
+    padding: 20px;
+    /* İçerik için boşluk */
+    background-color: #f4f4f4;
+    /* Açık gri arka plan rengi */
+    display: flex;
+    /* Flexbox kullanımı */
+    flex-wrap: wrap;
+    /* Kartların taşmasını önlemek için */
+    justify-content: center;
+    /* Kartları ortala */
+}
+
+.yazarlar h2 {
+    text-align: center;
+    /* Başlığı ortala */
+    color: #333;
+    /* Başlık rengi */
+    font-family: 'Arial', sans-serif;
+    /* Yazı tipi */
+    font-size: 28px;
+    /* Başlık boyutu */
+    margin-bottom: 20px;
+    /* Başlık altı boşluk */
+    width: 100%;
+    /* Başlığın tam genişlikte olmasını sağla */
+}
+
+.yazar-karti {
+    background-color: #fff;
+    /* Beyaz arka plan rengi */
+    border: 1px solid #ddd;
+    /* Kenar rengi */
+    border-radius: 8px;
+    /* Kenarları yuvarlama */
+    padding: 15px;
+    /* İçerik için boşluk */
+    margin: 15px;
+    /* Kartlar arasında boşluk */
+    text-align: center;
+    /* Metni ortala */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    transition: transform 0.2s;
+    /* Hover efekti için geçiş */
+    flex: 0 1 calc(50% - 30px);
+    /* Kartların genişliğini ayarlama (2 kart yan yana) */
+    max-width: 300px;
+    /* Kartların maksimum genişliği */
+}
+
+.yazar-karti:hover {
+    transform: scale(1.05);
+    /* Hover sırasında kartı büyütme */
+}
+
+.yazar-karti img {
+    width: 150px;
+    /* Resim genişliği */
+    height: auto;
+    /* Yükseklik otomatik */
+    border-radius: 50%;
+    /* Resmi dairesel yapma */
+    margin-bottom: 10px;
+    /* Resim altı boşluk */
+}
+
+.yazar-karti h3 {
+    color: #333;
+    /* Yazar adı rengi */
+    font-family: 'Arial', sans-serif;
+    /* Yazı tipi */
+    font-size: 20px;
+    /* Yazar adı boyutu */
+    margin: 10px 0;
+    /* Yazar adı üstü ve altı boşluk */
+}
+
+.yazar-karti p {
+    color: #555;
+    /* Paragraf rengi */
+    font-family: 'Georgia', serif;
+    /* Yazı tipi */
+    font-size: 16px;
+    /* Paragraf boyutu */
+    line-height: 1.5;
+    /* Satır yüksekliği */
+}
