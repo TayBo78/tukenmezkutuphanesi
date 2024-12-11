@@ -38,13 +38,18 @@
         }
 
         /* Grid layout for larger screens */
-        @media (min-width: 600px) {
-            .kitap-karti-container, .yazar-karti-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 20px;
+        @media (max-width: 768px) {
+            .kitap-karti {
+                width: calc(50% - 20px);
             }
         }
+
+        @media (max-width: 480px) {
+            .kitap-karti {
+                width: calc(100% - 20px);
+            }
+        }
+        
     </style>
 </head>
 
