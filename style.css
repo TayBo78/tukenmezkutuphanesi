@@ -125,6 +125,7 @@ main {
 }
 
 .yazarlar {
+    margin-top: 100px;
     padding: 20px;
     /* İçerik için boşluk */
     background-color: #f4f4f4;
