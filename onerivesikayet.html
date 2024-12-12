@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyip Tükenmez</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- Navbar -->
+     <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+           
+            <a class="w3-bar-item w3-button w3-padding-large" href="index.html">Ana Sayfa</a>
+            <a class="w3-bar-item w3-button w3-padding-large" href="kitaplar.html">Kitaplar</a>
+            <a class="w3-bar-item w3-button w3-padding-large" href="yazarlar.html">Yazarlar</a>
+            <a class="w3-bar-item w3-button w3-padding-large" href="onerivesikayet.html">Öneri Ve Şikayet</a>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+     
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ana Saya</a>
+        <a href="kitaplar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kitaplar</a>
+        <a href="yazarlar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Yazarlar</a>
+  
+    </div>
+
+    <div class="container">
+        <h2>Öneri ve Şikayet Formu</h2>
+        <form id="feedbackForm">
+            <label for="name">Adınız</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı giriniz..." required>
+
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz..." required>
+
+            <label for="message">Mesajınız</label>
+            <textarea id="message" name="message" rows="5" placeholder="Öneri veya şikayetinizi buraya yazınız..." required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+        <div class="success-message" id="successMessage">
+            Mesajınız başarıyla gönderildi!
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Formun varsayılan gönderme işlemini engelle
+
+            // Form verilerini temizle
+            this.reset();
+
+            // Başarı mesajını göster
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
