@@ -44,22 +44,25 @@ section h2 {
     border: 1px solid #ccc;
     /* Kenar rengi ve kalınlığı */
     display: block;
-    
+
     border-radius: 5px;
     /* Kenarları yuvarlatma */
-    padding: 10px;
+    padding: 15px;
     /* İçerik ile kenar arasındaki boşluk */
-    margin: 10px;
+    margin: 15px;
     /* Kartlar arasındaki boşluk */
     width: calc(33.33% - 20px);
     /* Üç kart yan yana olacak şekilde genişlik ayarı */
-    margin: 10px;
+    margin: 10px auto;
     /* Kartlar arasındaki boşluk */
     /* Kart genişliği */
+
     text-align: center;
-    /* Metni ortalama */
+
     width: calc(33.333% - 20px);
     /* Büyük ekranlarda üç sütunlu düzen */
+
+    /* Metni ortalama */
     background-color: #f9f9f9;
     /* Arka plan rengi */
     transition: transform 0.2s;
@@ -82,162 +85,162 @@ section h2 {
     }
 }
 
-.kitap-karti:hover {
-    transform: scale(1.05);
-    /* Hover durumunda kartı büyütme efekti */
-}
+    .kitap-karti:hover {
+        transform: scale(1.05);
+        /* Hover durumunda kartı büyütme efekti */
+    }
 
-.kitap-karti h3 {
-    font-size: 1.2em;
-    /* Başlık boyutunu artır */
-}
+    .kitap-karti h3 {
+        font-size: 1.2em;
+        /* Başlık boyutunu artır */
+    }
 
-.kitap-karti p {
-    font-size: 0.9em;
-    /* Paragraf boyutunu ayarla */
-}
+    .kitap-karti p {
+        font-size: 0.9em;
+        /* Paragraf boyutunu ayarla */
+    }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    /* Kartların birden fazla satıra yayılmasını sağlar */
-    justify-content: center;
-    /* Kartları ortalar */
-}
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        /* Kartların birden fazla satıra yayılmasını sağlar */
+        justify-content: center;
+        /* Kartları ortalar */
+    }
 
-.hakkinda {
-    background-color: #f9f9f9;
-    /* Açık gri arka plan rengi */
-    border: 1px solid #ddd;
-    /* Kenar rengi */
-    border-radius: 8px;
-    /* Kenarları yuvarlama */
-    padding: 20px;
-    /* İçerik için boşluk */
-    margin: 20px 0;
-    /* Üst ve alt boşluk */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Hafif gölge efekti */
-    text-align: center;
-    /* Metni ortalama */
-}
+    .hakkinda {
+        background-color: #f9f9f9;
+        /* Açık gri arka plan rengi */
+        border: 1px solid #ddd;
+        /* Kenar rengi */
+        border-radius: 8px;
+        /* Kenarları yuvarlama */
+        padding: 20px;
+        /* İçerik için boşluk */
+        margin: 20px 0;
+        /* Üst ve alt boşluk */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Hafif gölge efekti */
+        text-align: center;
+        /* Metni ortalama */
+    }
 
-.hakkinda h2 {
-    color: #333;
-    /* Başlık rengi */
-    font-family: 'Arial', sans-serif;
-    /* Yazı tipi */
-    font-size: 24px;
-    /* Başlık boyutu */
-    margin-bottom: 10px;
-    /* Başlık altı boşluk */
-}
+    .hakkinda h2 {
+        color: #333;
+        /* Başlık rengi */
+        font-family: 'Arial', sans-serif;
+        /* Yazı tipi */
+        font-size: 24px;
+        /* Başlık boyutu */
+        margin-bottom: 10px;
+        /* Başlık altı boşluk */
+    }
 
-.hakkinda p {
-    color: #555;
-    /* Paragraf rengi */
-    font-family: 'Georgia', serif;
-    /* Yazı tipi */
-    font-size: 16px;
-    /* Paragraf boyutu */
-    line-height: 1.6;
-    /* Satır yüksekliği */
-}
+    .hakkinda p {
+        color: #555;
+        /* Paragraf rengi */
+        font-family: 'Georgia', serif;
+        /* Yazı tipi */
+        font-size: 16px;
+        /* Paragraf boyutu */
+        line-height: 1.6;
+        /* Satır yüksekliği */
+    }
 
-.yazarlar {
+    .yazarlar {
 
-    margin-top: 20px;
-    padding: 20px;
-    /* İçerik için boşluk */
-    background-color: #f4f4f4;
-    /* Açık gri arka plan rengi */
-    display: flex;
-    /* Flexbox kullanımı */
-    flex-wrap: wrap;
-    /* Kartların taşmasını önlemek için */
-    justify-content: center;
-    /* Kartları ortala */
-}
+        margin-top: 20px;
+        padding: 20px;
+        /* İçerik için boşluk */
+        background-color: #f4f4f4;
+        /* Açık gri arka plan rengi */
+        display: flex;
+        /* Flexbox kullanımı */
+        flex-wrap: wrap;
+        /* Kartların taşmasını önlemek için */
+        justify-content: center;
+        /* Kartları ortala */
+    }
 
-.yazarlar h2 {
-    text-align: center;
-    /* Başlığı ortala */
-    color: #333;
-    /* Başlık rengi */
-    font-family: 'Arial', sans-serif;
-    /* Yazı tipi */
-    font-size: 28px;
-    /* Başlık boyutu */
-    margin-bottom: 20px;
-    /* Başlık altı boşluk */
-    width: 100%;
-    /* Başlığın tam genişlikte olmasını sağla */
-}
+    .yazarlar h2 {
+        text-align: center;
+        /* Başlığı ortala */
+        color: #333;
+        /* Başlık rengi */
+        font-family: 'Arial', sans-serif;
+        /* Yazı tipi */
+        font-size: 28px;
+        /* Başlık boyutu */
+        margin-bottom: 20px;
+        /* Başlık altı boşluk */
+        width: 100%;
+        /* Başlığın tam genişlikte olmasını sağla */
+    }
 
-.yazar-karti {
-    background-color: #fff;
-    /* Beyaz arka plan rengi */
-    border: 1px solid #ddd;
-    /* Kenar rengi */
-    border-radius: 8px;
-    /* Kenarları yuvarlama */
-    padding: 15px;
-    /* İçerik için boşluk */
-    margin: 15px;
-    /* Kartlar arasında boşluk */
-    text-align: center;
-    /* Metni ortala */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Hafif gölge efekti */
-    transition: transform 0.2s;
-    /* Hover efekti için geçiş */
+    .yazar-karti {
+        background-color: #fff;
+        /* Beyaz arka plan rengi */
+        border: 1px solid #ddd;
+        /* Kenar rengi */
+        border-radius: 8px;
+        /* Kenarları yuvarlama */
+        padding: 15px;
+        /* İçerik için boşluk */
+        margin: 15px;
+        /* Kartlar arasında boşluk */
+        text-align: center;
+        /* Metni ortala */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Hafif gölge efekti */
+        transition: transform 0.2s;
+        /* Hover efekti için geçiş */
 
-    max-width: 300px;
-    /* Kartların maksimum genişliği */
-}
+        max-width: 300px;
+        /* Kartların maksimum genişliği */
+    }
 
-.yazar-karti:hover {
-    transform: scale(1.05);
-    /* Hover sırasında kartı büyütme */
-}
+    .yazar-karti:hover {
+        transform: scale(1.05);
+        /* Hover sırasında kartı büyütme */
+    }
 
-.yazar-karti img {
-    width: 150px;
-    /* Resim genişliği */
-    height: auto;
-    /* Yükseklik otomatik */
-    border-radius: 50%;
-    /* Resmi dairesel yapma */
-    margin-bottom: 10px;
-    /* Resim altı boşluk */
-}
+    .yazar-karti img {
+        width: 150px;
+        /* Resim genişliği */
+        height: auto;
+        /* Yükseklik otomatik */
+        border-radius: 50%;
+        /* Resmi dairesel yapma */
+        margin-bottom: 10px;
+        /* Resim altı boşluk */
+    }
 
-.yazar-karti h3 {
-    color: #333;
-    /* Yazar adı rengi */
-    font-family: 'Arial', sans-serif;
-    /* Yazı tipi */
-    font-size: 20px;
-    /* Yazar adı boyutu */
-    margin: 10px 0;
-    /* Yazar adı üstü ve altı boşluk */
-}
+    .yazar-karti h3 {
+        color: #333;
+        /* Yazar adı rengi */
+        font-family: 'Arial', sans-serif;
+        /* Yazı tipi */
+        font-size: 20px;
+        /* Yazar adı boyutu */
+        margin: 10px 0;
+        /* Yazar adı üstü ve altı boşluk */
+    }
 
-.yazar-karti p {
-    color: #555;
-    /* Paragraf rengi */
-    font-family: 'Georgia', serif;
-    /* Yazı tipi */
-    font-size: 16px;
-    /* Paragraf boyutu */
-    line-height: 1.5;
-    /* Satır yüksekliği */
-}
+    .yazar-karti p {
+        color: #555;
+        /* Paragraf rengi */
+        font-family: 'Georgia', serif;
+        /* Yazı tipi */
+        font-size: 16px;
+        /* Paragraf boyutu */
+        line-height: 1.5;
+        /* Satır yüksekliği */
+    }
 
-.logo {
-    display: block;
-    margin: 20px auto 20px auto;
-    /* Üstte, altta ve yanlarda boşluk bırakmak için margin ayarları */
-    width: 100%;
-    max-width: 150px;
-}
+    .logo {
+        display: block;
+        margin: 20px auto 20px auto;
+        /* Üstte, altta ve yanlarda boşluk bırakmak için margin ayarları */
+        width: 100%;
+        max-width: 150px;
+    }
