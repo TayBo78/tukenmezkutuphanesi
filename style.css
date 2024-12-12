@@ -43,6 +43,8 @@ section h2 {
 .kitap-karti {
     border: 1px solid #ccc;
     /* Kenar rengi ve kalınlığı */
+    display: block;
+    
     border-radius: 5px;
     /* Kenarları yuvarlatma */
     padding: 10px;
@@ -55,12 +57,29 @@ section h2 {
     /* Kartlar arasındaki boşluk */
     /* Kart genişliği */
     text-align: center;
-    max-width: 300px;
     /* Metni ortalama */
+    width: calc(33.333% - 20px);
+    /* Büyük ekranlarda üç sütunlu düzen */
     background-color: #f9f9f9;
     /* Arka plan rengi */
     transition: transform 0.2s;
     /* Hover efekti için geçiş */
+}
+
+@media (max-width: 768px) {
+    .kitap-karti {
+        width: calc(50% - 20px);
+        /* Orta boyutlu ekranlarda iki sütunlu düzen */
+    }
+}
+
+@media (max-width: 480px) {
+    .kitap-karti {
+        width: calc(100% - 20px);
+        /* Küçük ekranlarda tam genişlikte */
+        margin: 10px auto;
+        /* Kartları ortalamak için margin ayarlandı */
+    }
 }
 
 .kitap-karti:hover {
