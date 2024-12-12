@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tayyip Tükenmez</title>
+    <title>Kütüphane</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +82,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         @media (min-width: 600px) {
@@ -92,6 +93,12 @@
                 top: 0;
                 left: 0;
                 padding-top: 0;
+            }
+
+            .w3-sidebar img {
+                width: 100%;
+                max-width: 200px;
+                margin-bottom: 20px;
             }
 
             .w3-content {
@@ -109,6 +116,8 @@
                 margin-right: 32%;
             }
         }
+
+        
     </style>
 </head>
 
@@ -120,7 +129,9 @@
     <nav class="w3-sidebar w3-black w3-top w3-large w3-padding" id="mySidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="w3_close()">×</a>
         <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Tükenmez<br>Kütüphane</b></h3>
+            <!-- Logo kısmı --> <img src="images/tknmz.jpeg" alt="Logo"
+                style="width:100%; max-width:200px; margin-bottom:20px;">
+
         </div>
         <div class="w3-bar-block">
             <a href="index.html" class="w3-bar-item w3-button w3-hover-white">Ana Sayfa</a>
@@ -152,9 +163,11 @@
         </div>
 
         <div class="w3-container w3-content w3-center w3-padding-64 ortala" style="max-width:800px">
-            <h2 class="w3-wide">KÜTÜPHANE</h2>
+            <h2 class="w3-wide"></h2>
             <p class="w3-opacity"><i>Kütüphane Hakkında</i></p>
-            <p class="w3-justify">Kütüphanenin misyonu, bilgiye erişimi kolaylaştırmak ve okuma alışkanlığını teşvik etmektir. Vizyonu ise, topluma bilgi ve kültür sunan, herkesin faydalanabileceği bir bilgi merkezi olmaktır.</p>
+            <p class="w3-justify">Kütüphanenin misyonu, bilgiye erişimi kolaylaştırmak ve okuma alışkanlığını teşvik
+                etmektir. Vizyonu ise, topluma bilgi ve kültür sunan, herkesin faydalanabileceği bir bilgi merkezi
+                olmaktır.</p>
         </div>
 
         <script>
@@ -187,4 +200,5 @@
         </script>
     </div>
 </body>
+
 </html>
