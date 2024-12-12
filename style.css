@@ -45,7 +45,7 @@ section h2 {
     /* Kenar rengi ve kalınlığı */
     border-radius: 5px;
     /* Kenarları yuvarlatma */
-    padding: 15px;
+    padding: 10px;
     /* İçerik ile kenar arasındaki boşluk */
     margin: 10px;
     /* Kartlar arasındaki boşluk */
@@ -55,6 +55,7 @@ section h2 {
     /* Kartlar arasındaki boşluk */
     /* Kart genişliği */
     text-align: center;
+    max-width: 300px;
     /* Metni ortalama */
     background-color: #f9f9f9;
     /* Arka plan rengi */
@@ -125,6 +126,7 @@ main {
 }
 
 .yazarlar {
+
     margin-top: 20px;
     padding: 20px;
     /* İçerik için boşluk */
@@ -170,8 +172,7 @@ main {
     /* Hafif gölge efekti */
     transition: transform 0.2s;
     /* Hover efekti için geçiş */
-    flex: 0 1 calc(50% - 30px);
-    /* Kartların genişliğini ayarlama (2 kart yan yana) */
+
     max-width: 300px;
     /* Kartların maksimum genişliği */
 }
@@ -212,4 +213,12 @@ main {
     /* Paragraf boyutu */
     line-height: 1.5;
     /* Satır yüksekliği */
+}
+
+.logo {
+    display: block;
+    margin: 20px auto 20px auto;
+    /* Üstte, altta ve yanlarda boşluk bırakmak için margin ayarları */
+    width: 100%;
+    max-width: 150px;
 }
