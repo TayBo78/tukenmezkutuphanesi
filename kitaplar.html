@@ -4,35 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kütüphane</title>
+    <title>Tayyip Tükenmez</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-   
+
+</head>
+<style>
+.w3-top .w3-bar-item img {
+height: 40px;
+vertical-align: middle;
+margin-right: 10px;
+}
+
+.w3-bar .w3-bar-item {
+padding: 16px;
+}
+
+.w3-bar .w3-bar-item.w3-hide-small {
+display: none;
+}
+
+.w3-bar .w3-bar-item.w3-show-small {
+display: block;
+}
+
+@media (min-width: 601px) {
+.w3-bar .w3-bar-item.w3-hide-small {
+display: block;
+}
+
+.w3-bar .w3-bar-item.w3-show-small {
+display: none;
+}
+}
+</style>
 </head>
 
 <body>
+
     <!-- Navbar -->
     <div class="w3-top">
-        <div class="w3-bar w3-black w3-card">
-           
-            <a class="w3-bar-item w3-button w3-padding-large" href="index.html">Ana Sayfa</a>
-            <a class="w3-bar-item w3-button w3-padding-large" href="kitaplar.html">Kitaplar</a>
-            <a class="w3-bar-item w3-button w3-padding-large" href="yazarlar.html">Yazarlar</a>
-            <a class="w3-bar-item w3-button w3-padding-large" href="onerivesikayet.html">Öneri Ve Şikayet</a>
-            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-right"><i class="fa fa-search"></i></a>
-        </div>
+        <div class="w3-bar w3-black w3-card"> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="index.html">Ana Sayfa</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="kitaplar.html">Kitaplar</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="yazarlar.html">Yazarlar</a><a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="popularkitap.html">Popüler Kitaplar</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="onerivesikayet.html">Öneri Ve Şikayet</a> <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-padding-large w3-right w3-show-small" onclick="toggleMenu()"><i
+                    class="fa fa-bars"></i></a> </div>
+    </div> <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Ana Sayfa</a> <a
+            href="kitaplar.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Kitaplar</a> <a
+            href="yazarlar.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Yazarlar</a><a
+            href="popularkitap.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Popüler Kitaplar</a> <a
+            href="onerivesikayet.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Öneri Ve Şikayet</a>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-     
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ana Saya</a>
-        <a href="kitaplar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kitaplar</a>
-        <a href="yazarlar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Yazarlar</a>
-  
     </div>
+
+    <script> function toggleMenu() { var x = document.getElementById("navDemo"); if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); } } </script>
 
     <main>
         <section>
