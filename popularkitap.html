@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyip Tükenmez</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .slider-container img {
+            width: 80%;
+            /* Resimlerin genişliğini artırdık */
+            max-width: 400px;
+            /* Maksimum genişlik */
+            height: auto;
+            margin-bottom: 20px;
+            /* Resimler arasında boşluk */
+        }
+
+        .w3-top .w3-bar-item img {
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .w3-bar .w3-bar-item {
+            padding: 16px;
+        }
+
+        .w3-bar .w3-bar-item.w3-hide-small {
+            display: none;
+        }
+
+        .w3-bar .w3-bar-item.w3-show-small {
+            display: block;
+        }
+
+        @media (min-width: 601px) {
+            .w3-bar .w3-bar-item.w3-hide-small {
+                display: block;
+            }
+
+            .w3-bar .w3-bar-item.w3-show-small {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card"> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="index.html">Ana Sayfa</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="kitaplar.html">Kitaplar</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="yazarlar.html">Yazarlar</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="popularkitap.html">Popüler Kitaplar</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                href="onerivesikayet.html">Öneri Ve Şikayet</a> <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-padding-large w3-right w3-show-small" onclick="toggleMenu()"><i
+                    class="fa fa-bars"></i></a> </div>
+    </div> <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Ana Sayfa</a><a
+            href="kitaplar.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Kitaplar</a> <a
+            href="yazarlar.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Yazarlar</a><a
+            href="popularkitap.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Popüler Kitaplar</a><a
+            href="onerivesikayet.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Öneri Ve
+            Şikayet</a>
+    </div>
+
+    </div>
+
+    <script> function toggleMenu() { var x = document.getElementById("navDemo"); if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); } } </script>
+
+    <!-- Page content -->
+    <div class="w3-content" style="margin-top:46px">
+        <header class="w3-center">
+            <h1>POPÜLER KİTAPLAR</h1>
+        </header>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="images/geceyarisikutup.jpg" style="width:20%">
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="images/otomatikportakal.jpg" style="width:20%">
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="images/farelerveinsanlar.jpg" style="width:20%">
+        </div>
+
+        <script>
+            // Automatic Slideshow - change image every 4 seconds
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 4000);
+            }
+        </script>
+    </div>
+
+    <main>
+        <section>
+            <h2></h2>
+
+            <div class="kitap-karti">
+                <img src="images/farelerveinsanlar.jpg" alt="Fareler ve İnsanlar">
+                <h3>Fareler ve İnsanlar</h3>
+                <p>Yazar: JOHN STEİNBECK</p>
+                <p>birbirine zıt karakterdeki iki mevsimlik tarım işçisinin, zeki George Milton ile güçlü kuvvetli fakat
+                    saf yoldaşı Lennie Small'un öyküsünü anlatır.</p>
+            </div>
+
+            <div class="kitap-karti">
+                <img src="images/geceyarisikutup.jpg" alt="Gece Yarısı Kütüphanesi">
+                <h3>Gece Yarısı Kütüphanesi</h3>
+                <p>Yazar: MATT HAIG</p>
+                <p>Bir gece kendini öldürmeye çalışır ancak bir şekilde kendisini okul kütüphanecisi Bayan Elm'in
+                    yönettiği bir kütüphanede bulur. Burası eğer farklı kararlar vermiş olsaydı, hayatını oluşturacak
+                    kendi hikâyeleriyle dolu milyonlarca kitap barındırmaktadır. Bu kütüphanede en çok memnun olacağı
+                    hayatı bulmaya çalışır.</p>
+            </div>
+
+            <div class="kitap-karti">
+                <img src="images/otomatikportakal.jpg" alt="Otomatik Portakal" width="200">
+                <h3>Otomatik Portakal</h3>
+                <p>Yazar: ANTHONY BURGESS</p>
+                <P>Bir holigan olan Alex (Malcolm McDowell) adlı gencin zaman geçirmek için üyesi olduğu sokak çetesi
+                    ile beraber işledikleri birçok suçtan sonra çete ile ayrılığa düşünce onlar tarafından ihbar
+                    edilmesini ve polis tarafından beyninin yıkanarak topluma kazandırılma metodu ve sonrasını anlatır.
+                </P>
+            </div>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
